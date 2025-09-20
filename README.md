@@ -14,7 +14,7 @@ Trang web hướng tới trải nghiệm hiện đại, dễ sử dụng, phù h
   + Đánh giá sản phẩm (tùy chọn): Khách hàng có thể để lại nhận xét.
 # Cài đặt
 Tải các thành phần liên quan
-  + Git clone []
+  + Git clone [https://github.com/MinT0703/DA_CS434W_Nhom7.git]
 # Công nghệ sử dụng
   + Frontend: HTML, CSS, JavaScript (Vanilla).
   + Backend: ASP.NET
