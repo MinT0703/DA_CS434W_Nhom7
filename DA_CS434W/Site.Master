@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DA_CS434W.Site" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Styles/styles.css") %>" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+
+<body id="bodyTag" runat="server" class="<%= BodyCssClass %>">
+    <form id="form1" runat="server">
+        <header>
+            <div class="container header-row">
+                <div class="logo"><a runat="server" href="~/Default.aspx">Nessa House</a></div>
+                <nav>
+                    <ul>
+                        <li><a runat="server" href="~/Default.aspx">Trang chủ</a></li>
+                        <li><a runat="server" href="~/Product.aspx">Sản phẩm</a></li>
+                        <li><a runat="server" href="~/Login.aspx">Đăng nhập</a></li>
+                        <li><a runat="server" href="~/Register.aspx">Đăng ký</a></li>
+                    </ul>
+                </nav>
+                <a class="icon-btn" runat="server" href="~/Cart.aspx" aria-label="Giỏ hàng">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 7h12l-1 13H7L6 7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                        <path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                        <path d="M6 7h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                    <span id="cartBadge" runat="server" class="badge">0</span>
+                </a>
+
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </form>
+</body>
+</html>
